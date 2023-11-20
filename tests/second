@@ -1,0 +1,14 @@
+one, two = 0, 0
+ans = 0
+numbers = ()
+for c in range(len(numbers)):
+    for a in range(2, numbers[c]):
+
+        if (numbers[c] % a == 0):
+            one = a
+            two = range(2, (numbers[c] - 1))
+            ans = numbers[c]
+            for k in two:
+                if one * k == ans:
+                    print("{}={}*{}".format(numbers[c], one, k))
+                break
